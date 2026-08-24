@@ -1,0 +1,30 @@
+name: Steve Yegge
+x:
+  handle: Steve_Yegge
+  id: "429567341"
+  url: https://x.com/Steve_Yegge
+github:
+  user: steveyegge
+  url: https://github.com/steveyegge
+projects:
+  - name: beads
+    url: https://github.com/gastownhall/beads
+    note: graph issue tracker for agents; Dolt-backed; bd ready/claim/close
+  - name: gastown
+    url: https://github.com/gastownhall/gastown
+    note: multi-agent workspace manager
+  - name: vc
+    url: https://github.com/steveyegge/vc
+    note: AI-orchestrated coding agent colony
+sites:
+  - https://beads.gascity.com
+  - https://steve-yegge.medium.com
+workflow: |
+  2026-06-28: Beads is "a knowledge graph of all your work, disguised as a lightweight issue tracker" + git ledger of agent steps + forensics (why) joined to git (what/where/how). Claims 650k+ downloads; works with all models; self-heals. Plan files convert to epic+tasks+deps (`plan-to-beads`). Multi-repo needs shared Dolt.
+  2026-06-30: personal joy is "code smooshing" with an agent on the worst leftover; fleet loops smoosh the rest.
+  Specs are not a markdown book — they're beads with dependency edges. Agents claim `bd ready`.
+sources:
+  - https://x.com/Steve_Yegge
+  - https://github.com/gastownhall/beads
+  - https://github.com/gastownhall/beads/blob/main/integrations/claude-code/commands/plan-to-beads.md
+updated: 2026-08-24

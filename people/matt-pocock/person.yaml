@@ -1,0 +1,27 @@
+name: Matt Pocock
+x:
+  handle: mattpocockuk
+  id: "346640777"
+  url: https://x.com/mattpocockuk
+github:
+  user: mattpocock
+  url: https://github.com/mattpocock
+projects:
+  - name: skills
+    url: https://github.com/mattpocock/skills
+    note: /grill-me /wayfinder /to-spec /to-tickets /implement-spec
+  - name: sandcastle
+    url: https://github.com/mattpocock/sandcastle
+    note: sandboxed parallel agents
+sites:
+  - https://aihero.dev
+  - https://totaltypescript.com
+workflow: |
+  2026-08-22: locked chain /wayfinder → /to-spec → /to-tickets → /implement-spec.
+  2026-08-21: /implement-spec is a multi-agent implementer (research subagent, concurrent ticket worktrees, spec review, cleanup). Ranked B; deterministic orchestrator A; /goal F. Goal is AFK after heavy upfront alignment, not human-implements-tickets.
+  Specs are issues: Problem, Solution, long user stories, implementation/testing decisions, out of scope. No file paths. Tickets are vertical slices with blockers, one context window each. Foggy work is a wayfinder map of decision tickets, not a 50-chapter plan.
+  skills repo (2026-08-21): added implement-spec skill + bucket docs.
+sources:
+  - xpool SearchTimeline from:mattpocockuk (2026-08-24)
+  - https://github.com/mattpocock/skills
+updated: 2026-08-24

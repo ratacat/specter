@@ -1,0 +1,26 @@
+name: Mario Zechner
+x:
+  handle: badlogicgames
+  id: "189876762"
+  url: https://x.com/badlogicgames
+github:
+  user: badlogic
+  url: https://github.com/badlogic
+projects:
+  - name: pi-mono
+    url: https://github.com/badlogic/pi-mono
+    note: Pi coding agent; AGENTS.md is the standing spec
+  - name: pi-skills
+    url: https://github.com/badlogic/pi-skills
+sites:
+  - https://mariozechner.at
+workflow: |
+  Does not publish 50-chapter plans. The spec is standing AGENTS.md rules (style, git, tests, never-do) plus GitHub issues/PRs. Multiple Pi sessions share a cwd — git rules exist so agents don't stomp each other (explicit `git add` paths, no `git add -A`, no reset --hard).
+  2026-08-23: still landing coding-agent harness fixes (finish-reason override, custom footer APIs, Windows keybindings).
+  2026-08-22: MCP servers in the spec got less token-heavy after "david and team" spec work.
+  Works with Armin Ronacher on Pi (bio: "Armin's handler").
+sources:
+  - https://x.com/badlogicgames
+  - https://github.com/badlogic/pi-mono/blob/main/AGENTS.md
+  - https://github.com/badlogic/pi-mono
+updated: 2026-08-24

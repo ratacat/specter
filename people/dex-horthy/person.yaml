@@ -1,0 +1,31 @@
+name: Dex Horthy
+x:
+  handle: dexhorthy
+  id: "820679805259550720"
+  url: https://x.com/dexhorthy
+github:
+  user: dexhorthy
+  url: https://github.com/dexhorthy
+projects:
+  - name: HumanLayer
+    url: https://github.com/humanlayer/humanlayer
+    note: 12-factor agents; collab across sessions/worktrees
+  - name: advanced-context-engineering-for-coding-agents
+    url: https://github.com/humanlayer/advanced-context-engineering-for-coding-agents
+    note: research → plan → implement; frequent intentional compaction
+  - name: gstack
+    url: https://github.com/dexhorthy/gstack
+    note: Garry Tan Claude Code setup packaged
+sites:
+  - https://humanlayer.dev
+  - https://hlyr.dev/ace
+  - https://hlyr.dev/12fa
+workflow: |
+  2026-08-19: keeping ALL specs in sync with ALL code is a manufactured problem; if codebase research is dialed in, spend the tokens. HumanLayer is for turning underspecified work into something an agent can oneshot — not a ticket factory.
+  Core: research doc (human-reviewed) → implementation plan (human-reviewed) → implement. Bad research × thousands of bad lines; bad plan × hundreds. Human attention on research/plan, not the PR.
+  Keep context utilization ~40–60%. Throw out wrong research and redo. Plans name files and include test commands (see example.md).
+sources:
+  - https://x.com/dexhorthy
+  - https://github.com/humanlayer/advanced-context-engineering-for-coding-agents
+  - https://github.com/ai-that-works/ai-that-works/blob/main/2025-08-05-advanced-context-engineering-for-coding-agents/thoughts/shared/plans/baml-test-assertion-validation-with-research.md
+updated: 2026-08-24

@@ -1,0 +1,33 @@
+name: Peter Steinberger
+x:
+  handle: steipete
+  id: "25401953"
+  url: https://x.com/steipete
+github:
+  user: steipete
+  url: https://github.com/steipete
+projects:
+  - name: OpenClaw
+    url: https://github.com/openclaw/openclaw
+    note: VISION.md as merge constitution
+  - name: CodexBar
+    url: https://github.com/steipete/CodexBar
+    note: dated docs/superpowers/specs + plans (obra's split)
+  - name: agent-scripts
+    url: https://github.com/steipete/agent-scripts
+    note: "Create or enter a plan only when the user explicitly asks"
+  - name: camsnap
+    url: https://github.com/steipete/camsnap
+    note: tiny docs/spec.md
+sites:
+  - https://steipete.me
+  - https://openclaw.ai
+workflow: |
+  Don't plan unless asked. Standing policy lives in VISION.md (Merge by Default vs Needs Sign-Off). Feature work: dated design spec (Decision, Accepted behavior, Non-goals, Required tests, Recorded product choice) then a TDD implementation plan that names files and inlines failing tests.
+  2026-08-15: AGENTS.md as living scar tissue — e.g. "upload videos to each PR that changes UI state."
+  CodexBar (2026-08-24): still shipping; changelog as house sections.
+sources:
+  - https://x.com/steipete
+  - https://github.com/steipete/CodexBar
+  - https://github.com/steipete/camsnap/blob/main/docs/spec.md
+updated: 2026-08-24

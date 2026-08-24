@@ -1,0 +1,201 @@
+# Spec components — Specter domain language.
+# One concept, one term. synonyms are scrape aliases, not extra concepts.
+# description qualifies how the agent treats it.
+#
+# Corpus-only (appear in others' plans; not house terms):
+#   file map, executor commands, task, phase, stop, intent
+
+- term: front matter
+  synonyms:
+    - Frontmatter
+    - YAML front matter
+    - metadata
+  description: >
+    Document fields, not a body section: title, date, status
+    (draft | agreed | superseded), slug, parent. Status and
+    parent live here, not as their own components.
+
+- term: Problem
+  synonyms:
+    - Problem Statement
+    - Why this matters
+  description: >
+    Pain today, from the user's side. Who cannot do what.
+    Not the as-is topology — that is Current system.
+
+- term: Current system
+  synonyms:
+    - Current state
+    - Current State Analysis
+    - Key Codebase Facts
+  description: >
+    How it actually works now. Snapshot, not a wish. Omit on
+    greenfield.
+
+- term: Solution
+  synonyms:
+    - Recommended Approach
+  description: >
+    What becomes true for that user when this spec is done.
+    Same altitude as Problem. Not architecture.
+
+- term: user stories
+  synonyms:
+    - User story
+    - User Stories
+  description: >
+    Actor, observable capability, benefit. Tag with a work-unit
+    id when this spec delivers it. Untagged is context, not work.
+
+- term: Success
+  synonyms:
+    - Success Criteria
+    - Done criteria
+    - Quality Gates
+    - Verification
+    - Test plan
+  description: >
+    Checkable facts that the work is done. A stranger can tell
+    pass from fail on a real surface (screen, CLI, eval, the
+    command that proves it). Inconclusive is fail.
+
+- term: Out of scope
+  synonyms:
+    - What we're NOT doing
+    - Non-goals
+  description: >
+    Named no's for this spec. Not later work — later work is
+    still wanted.
+
+- term: later work
+  synonyms:
+    - Next
+    - Next steps
+    - Further work
+    - Post-Implementation
+    - MVP vs next
+  description: >
+    Wanted, not this spec. Do not build it. Let the possibility
+    inform current design so this work does not paint that
+    future shut.
+
+- term: edit whitelist
+  synonyms:
+    - Can edit
+    - Can / cannot edit
+  description: >
+    Domain surfaces this spec may change. Blast radius you
+    accept, by domain, never by path.
+
+- term: edit blacklist
+  synonyms:
+    - Cannot edit
+  description: >
+    Domain surfaces this spec must not change. Read-only for
+    this work even if a "better" fix lives there.
+
+- term: invariants
+  synonyms:
+    - Invariant
+    - Non-negotiables
+    - Constraints
+  description: >
+    True before, during, and after. A goal can complete; an
+    invariant can only be upheld. Keep the list short.
+
+- term: design decisions
+  synonyms:
+    - Decision
+    - Decisions
+    - Implementation Decisions
+    - Product decisions
+    - Rationale
+  description: >
+    Contested calls, and why not the obvious alternative.
+    Skip anything already obvious from Problem or Solution.
+
+- term: open questions
+  synonyms:
+    - Open question
+    - Open decisions
+    - Open Questions
+  description: >
+    Deliberately unsettled. Write the options already visible.
+    If the work cannot ship without an answer, it is not open.
+
+- term: call contract
+  synonyms:
+    - Command surface
+    - Command / API surface
+    - Commands
+    - Named surface
+  description: >
+    The design at the edge: named things a user or program
+    actually invokes (CLI verbs, routes, RPC, flags, events)
+    and what must never appear in output. Not shell the
+    implementer runs.
+
+- term: data models
+  synonyms:
+    - Data model
+    - Schema
+    - Schema & API contract
+  description: >
+    Durable shapes and meaning. YAML or JSON of the data, not
+    of source files. Not ORMs, not tables-as-files.
+
+- term: Architecture
+  synonyms:
+    - Architecture Overview
+    - Architecture (modules)
+  description: >
+    Modules, interfaces, seams, edges. Map of duties. Not a
+    file tree.
+
+- term: Domain language
+  synonyms:
+    - Vocabulary
+    - Glossary
+    - Terms
+  description: >
+    Product terms this document must use. Infer the language
+    already in the product and domain; do not invent
+    alternatives. After agreement, no synonym drift.
+
+- term: automation metric
+  synonyms:
+    - Metric
+    - Optimization metric
+    - Cost model
+  description: >
+    One number the agent may move. Keep vs discard. Omit when
+    none would change a decision.
+
+- term: automation budget
+  synonyms:
+    - Budget
+  description: >
+    Cap that ends a trial (wall-clock, tokens, runs). The
+    metric decides keep/discard; the budget decides when a
+    trial is over. Write both, or neither.
+
+- term: risks
+  synonyms:
+    - Risk
+    - Risks and Challenges
+    - Risks & mitigations
+  description: >
+    What might go wrong in this change. Not halt rules for
+    the executor.
+
+- term: work units
+  synonyms:
+    - work unit
+    - Unit
+    - U-ID
+    - atomic unit
+    - behavior
+  description: >
+    Named behaviors this spec is on the hook to deliver.
+    Stable ids (U1, U2, …). Never renumber. Split keeps the
+    original id; new work takes the next unused number.

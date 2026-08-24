@@ -1,0 +1,44 @@
+name: Josh Pigford
+x:
+  handle: Shpigford
+  id: "626803"
+  url: https://x.com/Shpigford
+github:
+  user: Shpigford
+  url: https://github.com/Shpigford
+projects:
+  - name: nurb
+    url: https://github.com/Shpigford/nurb
+    note: agentic CAD for 3D printing; eval suite is a live /build run
+  - name: chops
+    url: https://github.com/Shpigford/chops
+    note: macOS app to browse/edit skills across Claude Code, Cursor, Codex, Windsurf, Amp
+  - name: clearly
+    url: https://github.com/Shpigford/clearly
+    note: markdown editor
+  - name: knockoff
+    url: https://github.com/Shpigford/knockoff
+    note: Chrome extension that filters Amazon pseudo-brands
+  - name: skills
+    url: https://github.com/Shpigford/skills
+    note: /build /research /but-for-real /learnings; repo 404 as of 2026-08-24 (was public)
+sites:
+  - https://joshpigford.com
+  - https://nurb.dev
+  - https://initialcommit.co
+workflow: |
+  Feature pipeline is four artifacts, not Plan mode. /research first (parallel agents: codebase, docs, web, deps, UI/UX) because Plan mode misses recent docs. Then /build:
+  1. research → docs/{name}/RESEARCH.md
+  2. implementation → docs/{name}/IMPLEMENTATION.md (phased; each phase ships something testable)
+  3. progress → docs/{name}/PROGRESS.md
+  4. /build phase N executes; /build status names the next step
+  Live instance: nurb `docs/evals/{RESEARCH,IMPLEMENTATION,PROGRESS}.md`. Phases have Objective / Rationale / Tasks / Success Criteria / Files Likely Affected. PROGRESS records a fresh-context verifier, evidence commands, decisions, and an adversarial pass that found real cheats. "One task done exhaustively fair beats three done shallowly."
+  After code: /but-for-real (git diff, prove it, no victory lap). Before commit: /learnings (high bar; "nothing worth adding" is valid).
+  2026-08: building nurb eval leaderboard (Claude/Codex/Gemini) on contributor subscriptions, not API keys.
+sources:
+  - https://x.com/Shpigford
+  - https://x.com/Shpigford/status/2046748955707326750
+  - https://github.com/Shpigford/nurb/blob/main/docs/evals/RESEARCH.md
+  - https://github.com/Shpigford/nurb/blob/main/docs/evals/IMPLEMENTATION.md
+  - https://github.com/Shpigford/nurb/blob/main/docs/evals/PROGRESS.md
+updated: 2026-08-24

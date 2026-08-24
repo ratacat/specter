@@ -1,0 +1,25 @@
+name: Thariq Shihipar
+x:
+  handle: trq212
+  id: "352806502"
+  url: https://x.com/trq212
+github:
+  user: ThariqS
+  url: https://github.com/ThariqS
+projects:
+  - name: html-effectiveness
+    url: https://github.com/ThariqS/html-effectiveness
+    note: gallery of standalone HTML artifacts — specs, plans, review boards, editors
+  - name: claude-plugins-community
+    url: https://github.com/ThariqS/claude-plugins-community
+    note: plugin marketplace mirror
+sites:
+  - https://thariq.io
+workflow: |
+  "HTML is the new markdown." Specs, plans, reviews, decks, design systems, and tiny editors ship as one self-contained HTML file (no build). Claude can animate, triage, and iterate in the artifact. SKILL.md files should stay small; scripts + progressive disclosure inside the skill, not a novel in frontmatter.
+  2026-08: Anthropic-internal /eli5 skill → HTML artifact, big pictures, few words. Video/deck work: HTML deck + lots of low-res renders because render time is the bottleneck.
+sources:
+  - https://x.com/trq212
+  - https://github.com/ThariqS/html-effectiveness
+  - https://github.com/ThariqS/html-effectiveness/blob/main/16-implementation-plan.html
+updated: 2026-08-24

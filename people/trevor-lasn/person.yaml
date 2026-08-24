@@ -1,0 +1,29 @@
+name: Trevor I. Lasn
+x:
+  handle: trevorlasn
+  id: "860044752267468801"
+  url: https://x.com/trevorlasn
+github:
+  user: trevorlasn
+  url: https://github.com/trevorlasn
+projects:
+  - name: 0xinsider
+    url: https://github.com/0xinsider
+    note: prediction-market intelligence API + MCP for agents (grades, whale flow, insider radar)
+  - name: docs.0xinsider.com
+    url: https://github.com/0xinsider/docs.0xinsider.com
+    note: Mintlify docs; llms-full.txt + OpenAPI + discovery endpoint
+sites:
+  - https://0xinsider.com
+  - https://docs.0xinsider.com
+workflow: |
+  Domain is one agent-accessible API, not a checkout flow. 0xinsider ships three interfaces under one subscription: REST, local MCP (`@0xinsider/mcp`), remote MCP. Agents get `llms-full.txt`, an unauthenticated discovery document (complete authenticated route index, not a sample), and OpenAPI. Recipes (insider-scanner, copy-trade, alert-bot) are the procedures.
+  2026-06 X: "every ticket is just a spec for the next fix." Repeated workflows become skill files the agent reads — prompt tweaks lose. Pin skills to package version so the agent cannot wire a stale pattern.
+  2026-05: copy-on-write on 0xinsider for months — branch per task, test destructive migrations, throw the branch away. "Version control for agent runs is the thing i keep wanting. branch from any step and replay it."
+  Goldsky skill pack (`trevorlasn/goldsky-agent`) is a fork of `goldsky-io/goldsky-agent`, not his original spec.
+sources:
+  - https://x.com/trevorlasn
+  - https://docs.0xinsider.com
+  - https://github.com/0xinsider/docs.0xinsider.com
+  - https://x.com/trevorlasn/status/2070828890797343118
+updated: 2026-08-24

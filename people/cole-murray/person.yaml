@@ -1,0 +1,24 @@
+name: Cole Murray
+x:
+  handle: colemurray
+  id: "3050823348"
+  url: https://x.com/colemurray
+github:
+  user: ColeMurray
+  url: https://github.com/ColeMurray
+projects:
+  - name: OpenInspect / background-agents
+    url: https://github.com/ColeMurray/background-agents
+    note: self-hostable background coding agents; ADRs + HOW_IT_WORKS
+sites:
+  - https://murraycole.com
+  - https://murraycole.com/projects/openinspect
+workflow: |
+  2026-08-24: "2025 caffeinate flows are dead. Year of the background agent." Spec is a prompt + environment (repos, secrets, skills); execution is a cloud session you check later. Parallel sessions, fire-and-forget PRs, Linear/Slack/GitHub as the inbox.
+  Architecture: control plane (Cloudflare Workers, Durable Objects, D1) vs data plane (sandboxes). Secrets stay out of the sandbox (placeholder env + egress proxy allowlist). Managed Skills centralize org skills off laptops/repos.
+  Decisions as short ADRs (single-provider SCM, session contracts). Docs are current-state how-it-works, not a 50-chapter product plan.
+sources:
+  - https://x.com/colemurray
+  - https://github.com/ColeMurray/background-agents
+  - https://github.com/ColeMurray/background-agents/blob/main/docs/adr/0001-single-provider-scm-boundaries.md
+updated: 2026-08-24

@@ -1,0 +1,30 @@
+name: Jeffrey Emanuel
+x:
+  handle: doodlestein
+  id: "29239591"
+  url: https://x.com/doodlestein
+github:
+  user: Dicklesworthstone
+  url: https://github.com/Dicklesworthstone
+projects:
+  - name: agent-flywheel
+    url: https://agent-flywheel.com/complete-guide
+    note: canonical workflow writeup
+  - name: frankengit
+    url: https://github.com/Dicklesworthstone/frankengit
+    note: COMPREHENSIVE_PLAN + ADRs + beads; commits still closing beads 2026-08-24
+  - name: beads_rust / br
+    url: https://github.com/Dicklesworthstone
+    note: Rust beads; issues.jsonl + FrankenSQLite; dropped original beads git-hook overcommit
+sites:
+  - https://agent-flywheel.com
+  - https://jeffreyemanuel.com
+workflow: |
+  2026-08-21: flywheel = huge iterated plans → beads (epics/tasks/deps) → swarm. Reality-check-for-projects bead + anti-ceremony skill. Clean-room replan (ignore current impl) then reimplement. Agent mail is the coordination substrate.
+  Two plan layers: short PLAN_TO_*.md (non-negotiables, source of truth, phases + acceptance, quality-gate commands) then COMPREHENSIVE_PLAN_FOR_*.md (numbered book 0–N) plus satellite docs/ (ADRs, VERIFY_SPEC, constitutions, negative evidence). Execution is beads, not the book.
+  frankengit main (2026-08-24): chore(beads) gate-close / GoldLotus backstop commits.
+sources:
+  - xpool SearchTimeline from:doodlestein (2026-08-24)
+  - https://github.com/Dicklesworthstone/frankengit
+  - https://github.com/Dicklesworthstone/fastmcp_rust/blob/main/PLAN_TO_PORT_FASTMCP_TO_RUST.md
+updated: 2026-08-24

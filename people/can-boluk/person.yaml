@@ -1,0 +1,28 @@
+name: Can Bölük
+x:
+  handle: _can1357
+  id: "602951145"
+  url: https://x.com/_can1357
+github:
+  user: can1357
+  url: https://github.com/can1357
+projects:
+  - name: oh-my-pi
+    url: https://github.com/can1357/oh-my-pi
+    note: omp; Pi fork with IDE-wired tools, LSP, subagents, plan mode
+  - name: llm-git
+    url: https://github.com/can1357/llm-git
+    note: agent commit messages
+sites:
+  - https://omp.sh
+  - https://can.ac
+workflow: |
+  Ships the harness, then uses it. Specs are standing AGENTS.md (Bun over Node, no prompt-strings-in-code, contract tests not source-greps) plus current-state architecture docs (e.g. session-tree-plan.md). Plan-mode approval names the session from the plan title.
+  2026-08-17: agent-written omp2 is cleaner than omp1 because the shape was a DSL designed up front, not a TS type filled at runtime. "Pi is not the limiting factor."
+  2026-08-24: last omp1 feature `/git`; omp2 waiting; blob-broker next. Advisors as agent-definition frontmatter (`/agents`), not a global /plan.
+  Channel transference (session tree /branch) is not Cursor `/plan`.
+sources:
+  - https://x.com/_can1357
+  - https://github.com/can1357/oh-my-pi
+  - https://github.com/can1357/oh-my-pi/blob/main/docs/session-tree-plan.md
+updated: 2026-08-24

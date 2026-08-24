@@ -1,0 +1,30 @@
+name: Alex Barashkov
+x:
+  handle: alex_barashkov
+  id: "241875548"
+  url: https://x.com/alex_barashkov
+github:
+  user: pixel-point
+  url: https://github.com/pixel-point
+projects:
+  - name: toolcraft
+    url: https://github.com/pixel-point/toolcraft
+    note: agent-first starter for custom design apps; AGENTS.md is the contract
+  - name: aval
+    url: https://github.com/pixel-point/aval
+    note: interactive video format
+  - name: densio
+    url: https://github.com/pixel-point/densio
+    note: agent-first video compression
+sites:
+  - https://pixelpoint.io
+  - https://pixelpoint.io/blog/how-to-craft-personal-design-tools-with-toolcraft/
+workflow: |
+  Agency ships one-off design tools instead of living in Figma/AE. `npx @pixel-point/toolcraft create` copies the runtime into the app so the agent can rewrite anything. Preflight: read workflow.md, then brainstorm spec → writing-plans → implement. Figma MCP is source of truth (not screenshots). Video refs get a frame-by-frame study first.
+  2026-08: "not one-shotted" — a day of iterations to lock math, refs, on-brand vibe. Grok 4.6 for speed/cheap; Fable still best at design requests. Harness overhaul to cut tokens and skip needless perf testing on later runs.
+  Plans are dated, product-decision lists + exact files + a verification *tier* (0–4). Worklog is a gate (`npm run test` fails if the decision trail is missing).
+sources:
+  - https://x.com/alex_barashkov
+  - https://github.com/pixel-point/toolcraft
+  - https://github.com/pixel-point/toolcraft/blob/main/examples/ascii/docs/plans/2026-07-13-duotone-preset-renaming.md
+updated: 2026-08-24

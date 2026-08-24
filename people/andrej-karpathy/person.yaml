@@ -1,0 +1,33 @@
+name: Andrej Karpathy
+x:
+  handle: karpathy
+  id: "33836629"
+  url: https://x.com/karpathy
+github:
+  user: karpathy
+  url: https://github.com/karpathy
+projects:
+  - name: nanochat
+    url: https://github.com/karpathy/nanochat
+    note: README is the spec; one complexity dial (--depth); speedrun.sh is the run
+  - name: autoresearch
+    url: https://github.com/karpathy/autoresearch
+    note: human edits program.md; agent edits train.py overnight
+  - name: llm-council
+    url: https://github.com/karpathy/llm-council
+  - name: nanoGPT / llm.c / micrograd
+    url: https://github.com/karpathy
+sites:
+  - https://karpathy.ai
+  - https://twitter.com/karpathy
+workflow: |
+  2026-08-20: the real spec is "microgpt" (scalar Python with for-loops). Everything else is compilation; PyTorch is a crappy IR.
+  2026-08-02: give a first paragraph + a $10/1M-token budget and let Opus write 5500 lines. No one would hand-write it. LLMs have stamina. Weakness: they can't audit video/gameplay natively.
+  2026-07-21: long /voice ramble (10 min stream of consciousness) as the spec. LLM reconstructs it cleaner than you typed. Mind-meld, then less correction.
+  Autoresearch: you do not touch the Python. You program `program.md`. Agent loops: hack train.py → 5-min train → keep if val_bpb improves else git reset. Never stop until interrupted. Human wakes up to the tsv.
+  nanochat README is the product spec: one dial, file map, metric (time-to-GPT-2 / CORE), "no giant config objects."
+sources:
+  - https://x.com/karpathy
+  - https://github.com/karpathy/autoresearch/blob/master/program.md
+  - https://github.com/karpathy/nanochat
+updated: 2026-08-24

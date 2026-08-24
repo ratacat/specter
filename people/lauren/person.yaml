@@ -1,0 +1,33 @@
+name: Lauren
+x:
+  handle: poteto
+  id: "2832427459"
+  url: https://x.com/poteto
+github:
+  user: poteto
+  url: https://github.com/poteto
+projects:
+  - name: pstack
+    url: https://github.com/cursor/plugins/tree/main/pstack
+    note: Cursor plugin; /poteto-mode playbooks; "best spec is code"
+  - name: noodle
+    url: https://github.com/poteto/noodle
+    note: skill-orchestrated agents; worktrees; execute+verify
+  - name: verification-skill-example
+    url: https://github.com/poteto/verification-skill-example
+    note: project-local verify skill + feature map
+  - name: how
+    url: https://github.com/poteto/how
+    note: architecture walkthrough skill
+sites:
+  - https://no.lol
+  - https://github.com/cursor/plugins/tree/main/pstack
+workflow: |
+  2026-08: Grok @Bot / Cursor @ SpaceXAI. Entry point is /setup-pstack then /poteto-mode. Coordinator can be a big model; coding workhorses Auto/Grok. Cloud swarm skill for parallel slices.
+  Does not default to planning: "the best spec is code." Cursor plan mode is optional. Feature playbook: /how the subsystem → /architect (or skip with a reason) → named data shape → delegate impl to a subagent → verify on the real surface (not "it compiles") → small stacked commits. Parallelism only after you can trust one agent.
+  Principles: laziness/smallest change, prove-it-works, subtract-before-add, never-block-on-the-human. Throughput without quality is not the goal.
+sources:
+  - https://x.com/poteto
+  - https://github.com/cursor/plugins/blob/main/pstack/README.md
+  - https://github.com/cursor/plugins/blob/main/pstack/skills/poteto-mode/playbooks/feature.md
+updated: 2026-08-24

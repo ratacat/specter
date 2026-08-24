@@ -1,0 +1,40 @@
+name: Jason Kneen
+x:
+  handle: jasonkneen
+  id: "6392872"
+  url: https://x.com/jasonkneen
+github:
+  user: jasonkneen
+  url: https://github.com/jasonkneen
+projects:
+  - name: lazar
+    url: https://github.com/jasonkneen/lazar
+    note: self-evolving agent; one tool (bash); skills as filesystem; kernel locked
+  - name: agensis
+    url: https://github.com/jasonkneen/agensis
+    note: humans + agents; Direct / Relay / Connector; ACP; identity persists
+  - name: vibeclaw
+    url: https://github.com/jasonkneen/vibeclaw
+    note: OpenClaw in the browser; ClawForge configurator
+  - name: infinitty
+    url: https://github.com/jasonkneen/infinitty
+    note: terminal built for agents
+  - name: tiny-world-builder
+    url: https://github.com/jasonkneen/tiny-world-builder
+    note: tiny-world-builder
+  - name: Agent-Farm-CLI
+    url: https://github.com/jasonkneen/Agent-Farm-CLI
+    note: silos for multiple Claude instances
+sites:
+  - https://agensis.io
+  - https://www.bouncingfish.com
+workflow: |
+  Lazar: kernel is a small Rust runner (one tool `bash`, sandboxed). Skills/memory on disk are the agent's being; kernel source is chmod a-w and the binary is chflags-locked. Kernel edits go through a proposal ceremony, not agent write.
+  Plans are numbered files from an improve/review pass (`plans/001-….md`) plus a README status table. Each plan: drift check against a pinned commit, Why, Current state excerpts, Scope in/out, Git workflow, Steps with per-step verify, Done criteria, STOP conditions, Maintenance notes. Rejected findings listed so nobody re-audits them. Executors are worktree-isolated subagents; operator merges.
+  Agensis (2026-08): identity/memory persist across threads. Language is Direct (web→API), Relay (desktop/CLI), Connector (MCP/webhook). Desktop can be a relay so agents keep running. Agent Farm harvests skills and manages Claude account rotas/worktrees.
+sources:
+  - https://x.com/jasonkneen
+  - https://github.com/jasonkneen/lazar
+  - https://github.com/jasonkneen/lazar/blob/main/plans/README.md
+  - https://github.com/jasonkneen/lazar/blob/main/plans/012-shell-guard-alignment.md
+updated: 2026-08-24

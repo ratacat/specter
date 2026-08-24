@@ -1,0 +1,37 @@
+name: Bootoshi
+x:
+  handle: KingBootoshi
+  id: "1623247610730676224"
+  url: https://x.com/KingBootoshi
+github:
+  user: kingbootoshi
+  url: https://github.com/kingbootoshi
+projects:
+  - name: directional-prompting
+    url: https://github.com/kingbootoshi/directional-prompting
+    note: outcome-first + directional language for prompts/skills/AGENTS.md
+  - name: rgr
+    url: https://github.com/kingbootoshi/rgr
+    note: intent-contract (signed boundary) + Red-Green-Refactor gate
+  - name: cartographer
+    url: https://github.com/kingbootoshi/cartographer
+    note: parallel subagents map/document a codebase
+  - name: codex-orchestrator
+    url: https://github.com/kingbootoshi/codex-orchestrator
+    note: Claude Code delegates Codex via tmux
+  - name: goal-ledger
+    url: https://github.com/kingbootoshi/goal-ledger
+    note: single-file ledger for /goal
+sites:
+  - https://bootoshi.ai
+  - https://axia.agency
+workflow: |
+  Spec language is two layers: Goal / Success means / Stop when, then every sentence a positive verb. Negations are a smell. That is how he writes AGENTS.md, skills, and agent directives.
+  Before planning: intent-contract → human-signed Locked Intent Boundary (required deltas, invariants, authorized-change rows) → hash-pinned IntentLock. Then rgr: freeze the failing test (SHA-256), green cannot edit it, verify --ci --replay in CI. ".rgr/ is evidence, not authority."
+  2026-08: walks + one giant voice prompt; used to survive Fable+CC, now compaction steers him off. Trying OMP because it summarizes a file before the agent reads it. Harnesses = "LLM state machine vessels." Native CLI (CC/Codex) + plug-in products, not products that steal the agent surface.
+  Claude orchestrates; Codex in tmux does the mechanical work. Cartographer first on unknown repos.
+sources:
+  - https://x.com/KingBootoshi
+  - https://github.com/kingbootoshi/directional-prompting
+  - https://github.com/kingbootoshi/rgr
+updated: 2026-08-24

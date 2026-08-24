@@ -1,0 +1,23 @@
+name: Thibault Sottiaux
+x:
+  handle: thsottiaux
+  id: "1953337039510003712"
+  url: https://x.com/thsottiaux
+github:
+  user: thsottiaux
+  url: https://github.com/thsottiaux
+projects:
+  - name: Codex
+    url: https://openai.com/codex
+    note: OpenAI software-engineering agent; he leads Codex
+sites:
+  - https://linearb.io/dev-interrupted/podcast/openai-codex-thibault-sottiaux-agentic-autonomy
+  - https://every.to/podcast/how-openai-s-codex-team-uses-their-coding-agent
+workflow: |
+  "Scaffolding is coping not scaling." The harness is temporary: remove it as the model gets better, or you get capability overhang (the wrapper limits the model). Build the agent first; discover scalable primitives; let the model do the work. Cache-hit rate is a first-class efficiency metric for long sessions.
+  2026-08: 20M Codex actives; public ops on rate limits, image+compaction waste, conversation-title drain. Official clients + OSS that Sign in with ChatGPT (Pi, OpenCode) are the supported surface.
+  Public GitHub under this login is not the Codex source of truth (slop-looking stubs). Spec lives in interviews + product.
+sources:
+  - https://x.com/thsottiaux
+  - https://linearb.io/blog/openai-codex-thibault-sottiaux-agentic-autonomy
+updated: 2026-08-24

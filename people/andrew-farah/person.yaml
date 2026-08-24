@@ -1,0 +1,31 @@
+name: Andrew Farah
+x:
+  handle: andrewfarah
+  id: "14285126"
+  url: https://x.com/andrewfarah
+github:
+  user: afar1
+  url: https://github.com/afar1
+projects:
+  - name: fieldtheory-cli
+    url: https://github.com/afar1/fieldtheory-cli
+    note: local X bookmarks + Library + ft possible (bookmark-grounded goal prompts)
+  - name: fieldtheory
+    url: https://github.com/afar1/fieldtheory
+    note: Mac app — writing, reading, voice, terminal, bookmarks, clipboard
+  - name: onboard-computer
+    url: https://github.com/afar1/onboard-computer
+    note: macOS developer onboarding
+sites:
+  - https://www.fieldtheory.dev
+  - https://density.io
+  - https://onboard.computer
+workflow: |
+  Context is local files, not chat. `ft sync` pulls X bookmarks to disk so any agent with a shell can search them. Specs for new work come out of `ft possible`: a seed (real bookmarks, never invented text) + repos + a 2x2 frame (e.g. leverage × specificity) → survey → generate → critique → score. Each surviving idea is a node with axis justifications, effort, and a copiable goal prompt pasted into Claude Code / Codex.
+  Artifacts are dated markdown under `~/.fieldtheory/ideas/{seeds,runs,nodes,batches}/` with YAML cross-links. Nightly/background runs are first-class. `/chapter` writes long-form Library pages from the same context (Kindle export).
+  CLI is MIT; Mac app is the viewer. Agents drive `ft`, not the GUI.
+sources:
+  - https://x.com/andrewfarah
+  - https://github.com/afar1/fieldtheory-cli
+  - https://github.com/afar1/fieldtheory-cli/blob/main/.claude/commands/fieldtheory.md
+updated: 2026-08-24

@@ -1,0 +1,28 @@
+name: Lee Robinson
+x:
+  handle: leerob
+  id: "81712767"
+  url: https://x.com/leerob
+github:
+  user: leerob
+  url: https://github.com/leerob
+projects:
+  - name: pixo
+    url: https://github.com/leerob/pixo
+    note: Rust image compression; AGENTS.md + Cursor plans with todo DAG
+  - name: next-mdx-blog
+    url: https://github.com/leerob/next-mdx-blog
+    note: Next.js + MDX template
+  - name: next-self-host
+    url: https://github.com/leerob/next-self-host
+    note: Next / Postgres / Nginx on Ubuntu
+sites:
+  - https://leerob.com
+workflow: |
+  Cursor plan files are the spec: YAML frontmatter (name, overview, todo DAG with ids/deps/status) then architecture mermaid + file tree. pixo AGENTS.md is standing commands/architecture/workflow rules (update BENCHMARKS.md when benches change).
+  2026-08: SpaceXAI, training Grok for the Bot harness. Grok Bot uses the Cursor cloud harness natively. Not a model-picker product — Cursor or Grok Build if you want that.
+sources:
+  - https://x.com/leerob
+  - https://github.com/leerob/pixo/blob/main/AGENTS.md
+  - https://github.com/leerob/pixo/blob/main/.cursor/plans/rust_image_compression_library_3adbb238.plan.md
+updated: 2026-08-24

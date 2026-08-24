@@ -1,0 +1,42 @@
+name: Kun Chen
+x:
+  handle: kunchenguid
+  id: "1433268230819176451"
+  url: https://x.com/kunchenguid
+github:
+  user: kunchenguid
+  url: https://github.com/kunchenguid
+projects:
+  - name: firstmate
+    url: https://github.com/kunchenguid/firstmate
+    note: talk to one agent; ship with a crew. VISION.md is the acceptance policy
+  - name: grok-ship
+    url: https://github.com/kunchenguid/grok-ship
+    note: software factory on Grok Bot — Firstmate + crewmates + Cursor cloud agents
+  - name: vision
+    url: https://github.com/kunchenguid/vision
+    note: /vision mines repo history → VISION.md → lavish-axi hypotheticals
+  - name: no-mistakes
+    url: https://github.com/kunchenguid/no-mistakes
+    note: git push no-mistakes (validation)
+  - name: axi
+    url: https://github.com/kunchenguid/axi
+    note: agent-ergonomic CLI design; lower tokens than MCP
+  - name: gnhf
+    url: https://github.com/kunchenguid/gnhf
+    note: overnight agent runs ("good night, have fun")
+  - name: lavish-axi
+    url: https://github.com/kunchenguid/lavish-axi
+    note: HTML artifacts as the interactive review surface
+sites:
+  - https://linktr.ee/kunchenguid
+workflow: |
+  Spec of a project is VISION.md: an acceptance policy, not a roadmap. /vision mines merged PRs (evidence over vibes), drafts 40–70 lines, then stress-tests on a lavish-axi board of 8–12 non-obvious hypotheticals. Author owns every line. "A change aligns when … / A change should be resisted when …"
+  Operating model (Grok Ship, 2026-08-20): captain talks only to Firstmate. Firstmate writes a sqlite task row (kind scout|ship|decision), delegates to a charter'd crewmate. Scout = report, never a PR. Ship = Cursor cloud agent + fresh-context adversarial review; no PR until review is clean; no merge without captain word. Decisions come one card at a time. Complex planning is a lavish HTML session, not a markdown book. Chat is not the backlog.
+  Scripts own mechanics; agents own judgment. The first mate does not do the work.
+sources:
+  - https://x.com/kunchenguid/status/2090463366762676732
+  - https://github.com/kunchenguid/firstmate/blob/main/VISION.md
+  - https://github.com/kunchenguid/vision/blob/main/skills/vision/SKILL.md
+  - https://github.com/kunchenguid/grok-ship/blob/main/GROK_SHIP.md
+updated: 2026-08-24

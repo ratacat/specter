@@ -1,0 +1,29 @@
+name: Elvis Sun
+x:
+  handle: elvissun
+  id: "1683639929673220097"
+  url: https://x.com/elvissun
+github:
+  user: elvisun
+  url: https://github.com/elvisun
+projects:
+  - name: newsjack
+    url: https://github.com/elvisun/newsjack
+    note: open-source PR skills for agents; evals as the product score
+  - name: Medialyst
+    url: https://medialyst.ai
+    note: AI media lists; weekly practitioner-graded eval (Carly score)
+sites:
+  - https://medialyst.ai
+  - https://newsjack.sh
+  - https://elvis.so
+workflow: |
+  2026-08: 7-day solo-founder sprint. Fri plan/scope; sat/sun 4–5 parallel /goal on Claude Code + Codex for the heavy 80%; Mon calls + quick wins (Claude reset); Tue close last 20%; Wed soak; Thu launch. Agents do support/bugs/ops all week.
+  Product quality = a practitioner eval, not a vibe. Advisor @prcarly grades media lists weekly (anti-overfit: cannot edit her emails). Score 27.9 → 51.3. Encode her method as subagents: one news → several *angles*, chat the plan, then one research subagent per angle in its own container, each picking the next query from what it just read.
+  newsjack AGENTS.md: CLI is deterministic JSON; judgment/angles live in skills. Evidence-first discovery, strict surfacing. Minimal durable memory.
+  "Turn an ops problem into a software problem. Data defects into software defects. Software defects always get fixed."
+sources:
+  - https://x.com/elvissun
+  - https://github.com/elvisun/newsjack/blob/main/AGENTS.md
+  - https://medialyst.ai/carly-score
+updated: 2026-08-24

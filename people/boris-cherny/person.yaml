@@ -1,0 +1,26 @@
+name: Boris Cherny
+x:
+  handle: bcherny
+  id: "159337660"
+  url: https://x.com/bcherny
+github:
+  user: bcherny
+  url: https://github.com/bcherny
+projects:
+  - name: json-schema-to-typescript
+    url: https://github.com/bcherny/json-schema-to-typescript
+    note: JSON Schema → TS (pre Claude Code)
+  - name: undux
+    url: https://github.com/bcherny/undux
+    note: simple React state
+sites:
+  - https://borischerny.com
+  - https://claude.com/blog/auto-mode-default-in-claude-code
+workflow: |
+  Spec is Plan mode, then auto-accept. Shared CLAUDE.md is the compounding spec: every mistake is written there or into a skill, not corrected in chat. "If you can do this, then Claude can just run forever."
+  Team CLAUDE.md is git-checked, edited multiple times a week. Review: tag @.claude on PRs to add rules. Parallel sessions + worktrees. Verifier agent per sticky rule. 2026-08: auto mode default; CLAUDE.md/skills that cause rabbit-holes are the bug (`claude --safe-mode` to isolate).
+sources:
+  - https://x.com/bcherny
+  - https://x.com/bcherny/status/2017742741636321619
+  - https://getpushtoprod.substack.com/p/how-the-creator-of-claude-code-actually
+updated: 2026-08-24

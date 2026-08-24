@@ -1,0 +1,32 @@
+name: Trevin Chow
+x:
+  handle: trevin
+  id: "627363"
+  url: https://x.com/trevin
+github:
+  user: tmchow
+  url: https://github.com/tmchow
+projects:
+  - name: compound-engineering-plugin
+    url: https://github.com/EveryInc/compound-engineering-plugin
+    note: /ce-brainstorm → /ce-plan → /ce-work; STRATEGY.md
+  - name: printing-press
+    url: https://printingpress.dev
+    note: agent-native CLIs; @ppressdev
+  - name: illo-skill
+    url: https://github.com/tmchow/illo-skill
+    note: editorial illustration skill
+sites:
+  - https://trev.in
+  - https://every.to
+  - https://printingpress.dev
+workflow: |
+  2026-08-24: /ce-strategy writes STRATEGY.md (VISION.md equivalent). All CE skills look for it. 5–10 min of human thought, then the file steers every later skill.
+  2026-08-23: skills rewritten ~70% smaller (load essentials, pull procedures on demand). v3.23.
+  2026-08-18 pattern: Fable + ce-brainstorm/ce-plan, commit the plan; ce-handoff to Codex Sol as orchestrator with Luna High subagents on ce-work; don't let subagents stall; surface decisions in the orchestrating session. Overnight monster runs. PR stacks optional.
+  ce-plan = guardrails not choreography: decisions, scope, atomic U-IDs, files, test scenarios, risks. No exact signatures or shell steps. ce-work figures HOW with code in front of it. Confidence check auto-deepens thin sections.
+sources:
+  - https://x.com/trevin
+  - https://github.com/EveryInc/compound-engineering-plugin
+  - https://github.com/EveryInc/compound-engineering-plugin/blob/main/docs/skills/ce-plan.md
+updated: 2026-08-24

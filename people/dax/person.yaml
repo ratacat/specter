@@ -1,0 +1,26 @@
+name: Dax
+x:
+  handle: thdxr
+  id: "2870102861"
+  url: https://x.com/thdxr
+github:
+  user: thdxr
+  url: https://github.com/thdxr
+projects:
+  - name: opencode
+    url: https://github.com/anomalyco/opencode
+    note: open-source coding agent; CONTEXT.md is the domain-language spec
+  - name: sst
+    url: https://github.com/sst
+    note: prior; SST
+sites:
+  - https://thdxr.com
+  - https://opencode.ai
+workflow: |
+  "We try not to have too many opinions in how agents should work. Every model is intensely trained to use certain tools and workflows so we try to match that environment perfectly. You can think you came up with something better but it will just underperform."
+  Repo spec is two layers: AGENTS.md (style, commits, session-v2 invariants) + CONTEXT.md (named domain language: System Context vs Session History vs Context Epoch — with forbidden synonyms). UI/core features need design review before implementation. `/learn` writes non-obvious session learnings into the nearest AGENTS.md (1–3 lines).
+sources:
+  - https://x.com/thdxr/status/2091176466801181119
+  - https://github.com/anomalyco/opencode/blob/dev/AGENTS.md
+  - https://github.com/anomalyco/opencode/blob/dev/CONTEXT.md
+updated: 2026-08-24

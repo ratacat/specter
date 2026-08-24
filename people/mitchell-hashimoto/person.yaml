@@ -1,0 +1,30 @@
+name: Mitchell Hashimoto
+x:
+  handle: mitchellh
+  id: "12819682"
+  url: https://x.com/mitchellh
+github:
+  user: mitchellh
+  url: https://github.com/mitchellh
+projects:
+  - name: ghostty
+    url: https://github.com/ghostty-org/ghostty
+    note: GPU terminal; AGENTS.md + AI_POLICY.md; libghostty
+  - name: libxev
+    url: https://github.com/mitchellh/libxev
+    note: Zig event loop
+  - name: vouch
+    url: https://github.com/mitchellh/vouch
+    note: community trust via explicit vouches
+sites:
+  - https://mitchellh.com
+  - https://ghostty.org
+workflow: |
+  Human owns the spec. Agents own validation loops. 2026-08 Kitty Graphics: he read the spec and Kitty source himself; Fable+Sol ran 3 weeks finding mismatches vs spec/Kitty/Ghostty. Then a 4-stage agent pipeline wrote 400+ tests (harness, parallel case writers, adversarial judge, dedupe). He reviewed, fixed, re-ran. "Judge" prompt: do not trust the author; assume ill intent.
+  Ghostty AGENTS.md is standing rules (build/test filters, never open issues/PRs). AI_POLICY.md: disclose AI, human must understand every line, no AI media. Maintainers exempt; outside slop is denounced.
+sources:
+  - https://x.com/mitchellh/status/2090875695346139621
+  - https://x.com/mitchellh/status/2090893729469268109
+  - https://github.com/ghostty-org/ghostty/blob/main/AGENTS.md
+  - https://github.com/ghostty-org/ghostty/blob/main/AI_POLICY.md
+updated: 2026-08-24
