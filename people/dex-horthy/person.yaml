@@ -23,7 +23,7 @@ sites:
 workflow: |
   2026-08-19: keeping ALL specs in sync with ALL code is a manufactured problem; if codebase research is dialed in, spend the tokens. HumanLayer is for turning underspecified work into something an agent can oneshot — not a ticket factory.
   Core: research doc (human-reviewed) → implementation plan (human-reviewed) → implement. Bad research × thousands of bad lines; bad plan × hundreds. Human attention on research/plan, not the PR.
-  Keep context utilization ~40–60%. Throw out wrong research and redo. Plans name files and include test commands (see example.md).
+  Keep context utilization ~40–60%. Throw out wrong research and redo. Plans name files and include test commands (see examples/).
 sources:
   - https://x.com/dexhorthy
   - https://github.com/humanlayer/advanced-context-engineering-for-coding-agents

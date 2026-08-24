@@ -49,13 +49,13 @@ AGENTS.md                 short rules for agents in this repo
 people/
   <builder>/
     person.yaml           GitHub, X, projects, and how they work now
-    example.md            one real spec or plan (not a bio)
+    examples/             real spec/plan specimens, mixed kinds (not a bio)
 specs/
   components.yaml         spec parts: description + instructions
   specfinition.md         ratacat's spec definition
 ```
 
-One folder per builder. `person.yaml` is the map. `example.md` is a real sample from their work.
+One folder per builder. `person.yaml` is the map. `examples/` holds real samples from their work. Look for more than one kind of specimen when they publish them (a spec and a plan, an ADR and an eval, a metric loop and a product readme).
 
 ## Builders
 
