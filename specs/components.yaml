@@ -1,6 +1,7 @@
 # Spec components — Specter domain language.
 # One concept, one term. synonyms are scrape aliases, not extra concepts.
-# description qualifies how the agent treats it.
+# description: what the part is.
+# instructions: how to write it. Included in specfinition.
 #
 # Corpus-only (appear in others' plans; not house terms):
 #   file map, executor commands, task, phase, stop, intent
@@ -14,6 +15,9 @@
     Document fields, not a body section: title, date, status
     (draft | agreed | superseded), slug, parent. Status and
     parent live here, not as their own components.
+  instructions: >
+    Fill title, date, status, slug. Set parent only when this
+    spec iterates an earlier one. Do not add extra fields.
 
 - term: problem
   synonyms:
@@ -22,6 +26,10 @@
   description: >
     Pain today, from the user's side. Who cannot do what.
     Not the as-is topology — that is current system.
+  instructions: >
+    Always include. Name who hurts and what they cannot do
+    today. Stay in the user's world, not the code. If several
+    pains exist, mark which this spec addresses.
 
 - term: current system
   synonyms:
@@ -29,8 +37,10 @@
     - Current State Analysis
     - Key Codebase Facts
   description: >
-    How it actually works now. Snapshot, not a wish. Omit on
-    greenfield.
+    How it actually works now. Snapshot, not a wish.
+  instructions: >
+    If blank, it is not used (greenfield). When present, snapshot
+    what exists now. Do not write wishes here.
 
 - term: solution
   synonyms:
@@ -38,6 +48,10 @@
   description: >
     What becomes true for that user when this spec is done.
     Same altitude as problem. Not architecture.
+  instructions: >
+    Always include. Same altitude as problem. One or two
+    paragraphs of the new outcome. Do not preview architecture,
+    data models, or work units here.
 
 - term: user stories
   synonyms:
@@ -45,6 +59,9 @@
     - User Stories
   description: >
     Actor, observable capability, benefit. Tag with a work-unit
+    id when this spec delivers it. Untagged is context, not work.
+  instructions: >
+    Write enough to cover edges. Tag a story with a work-unit
     id when this spec delivers it. Untagged is context, not work.
 
 - term: success
@@ -58,6 +75,9 @@
     Checkable facts that the work is done. A stranger can tell
     pass from fail on a real surface (screen, CLI, eval, the
     command that proves it). Inconclusive is fail.
+  instructions: >
+    Always include. Each line is a checkable fact on a real
+    surface. Inconclusive is fail. Do not list chores.
 
 - term: out of scope
   synonyms:
@@ -66,6 +86,8 @@
   description: >
     Named no's for this spec. Not later work — later work is
     still wanted.
+  instructions: >
+    Named no's for this spec. Do not put later work here.
 
 - term: later work
   synonyms:
@@ -78,6 +100,9 @@
     Wanted, not this spec. Do not build it. Let the possibility
     inform current design so this work does not paint that
     future shut.
+  instructions: >
+    Wanted, not this spec. Do not build it. Let it shape the
+    current design so this work does not paint that future shut.
 
 - term: edit whitelist
   synonyms:
@@ -86,6 +111,10 @@
   description: >
     Domain surfaces this spec may change. Blast radius you
     accept, by domain, never by path.
+  instructions: >
+    If blank, it is not used. Do not read empty as "edit
+    nothing." When present, only these domain surfaces may
+    change. Name by domain, never by path.
 
 - term: edit blacklist
   synonyms:
@@ -93,6 +122,11 @@
   description: >
     Domain surfaces this spec must not change. Read-only for
     this work even if a "better" fix lives there.
+  instructions: >
+    If blank, it is not used. Do not read empty as "edit
+    everything" or "edit nothing." When present, those domain
+    surfaces are read-only for this spec even if a better fix
+    lives there.
 
 - term: invariants
   synonyms:
@@ -102,6 +136,9 @@
   description: >
     True before, during, and after. A goal can complete; an
     invariant can only be upheld. Keep the list short.
+  instructions: >
+    Keep the list short. A goal can complete; an invariant can
+    only be upheld. Reserve NEVER/MUST for these lines.
 
 - term: design decisions
   synonyms:
@@ -113,6 +150,10 @@
   description: >
     Contested calls, and why not the obvious alternative.
     Skip anything already obvious from problem or solution.
+  instructions: >
+    Record a row only when a reader would ask why this, not the
+    other thing. Skip anything already obvious from problem or
+    solution.
 
 - term: open questions
   synonyms:
@@ -122,6 +163,9 @@
   description: >
     Deliberately unsettled. Write the options already visible.
     If the work cannot ship without an answer, it is not open.
+  instructions: >
+    Write the options already visible. If the work cannot ship
+    without an answer, it is not open.
 
 - term: call contract
   synonyms:
@@ -134,6 +178,10 @@
     actually invokes (CLI verbs, routes, RPC, flags, events)
     and what must never appear in output. Not shell the
     implementer runs.
+  instructions: >
+    Show named verbs a caller runs and what must never appear
+    in output. If there is no user-facing surface, say so and
+    point success at the remaining observable.
 
 - term: data models
   synonyms:
@@ -143,6 +191,10 @@
   description: >
     Durable shapes and meaning. YAML or JSON of the data, not
     of source files. Not ORMs, not tables-as-files.
+  instructions: >
+    Show YAML or JSON of the data, not of source files. Name
+    entities in domain language. Show one happy record and the
+    empty cases success cares about.
 
 - term: architecture
   synonyms:
@@ -151,6 +203,10 @@
   description: >
     Modules, interfaces, seams, edges. Map of duties. Not a
     file tree.
+  instructions: >
+    Map modules, interfaces, seams, edges. If no new module and
+    no changed edge, one line naming where behaviour lands. Not
+    a file tree.
 
 - term: domain language
   synonyms:
@@ -161,6 +217,10 @@
     Product terms this document must use. Infer the language
     already in the product and domain; do not invent
     alternatives. After agreement, no synonym drift.
+  instructions: >
+    Infer product terms already in use; do not invent stand-ins.
+    Agree with the user before status: agreed. After that, no
+    synonym drift. Always include.
 
 - term: automation metric
   synonyms:
@@ -168,8 +228,13 @@
     - Optimization metric
     - Cost model
   description: >
-    One number the agent may move. Keep vs discard. Omit when
-    none would change a decision.
+    One number the agent may move. Keep vs discard.
+  instructions: >
+    For auto-research loops (keep vs discard a trial), not
+    ordinary product work. If blank, it is not used. When
+    present, one number, directional, measured the same way
+    every run. Write with automation budget, or neither. Do
+    not invent a vanity score.
 
 - term: automation budget
   synonyms:
@@ -177,7 +242,11 @@
   description: >
     Cap that ends a trial (wall-clock, tokens, runs). The
     metric decides keep/discard; the budget decides when a
-    trial is over. Write both, or neither.
+    trial is over.
+  instructions: >
+    For auto-research loops. If blank, it is not used. When
+    present, the cap that ends a trial (wall-clock, tokens,
+    runs). Write with automation metric, or neither.
 
 - term: risks
   synonyms:
@@ -185,6 +254,9 @@
     - Risks and Challenges
     - Risks & mitigations
   description: >
+    What might go wrong in this change. Not halt rules for
+    the executor.
+  instructions: >
     What might go wrong in this change. Not halt rules for
     the executor.
 
@@ -199,3 +271,7 @@
     Named behaviors this spec is on the hook to deliver.
     Stable ids (U1, U2, …). Never renumber. Split keeps the
     original id; new work takes the next unused number.
+  instructions: >
+    Always include. Stable ids (U1, U2, …). Never renumber.
+    Split keeps the original id; new work takes the next
+    unused number.

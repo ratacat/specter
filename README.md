@@ -8,31 +8,31 @@ This repo stays current. It pulls from the GitHubs and X accounts of the builder
 
 ## Spec parts
 
-These are the named parts Specter uses. Full wording, synonyms, and how an agent should treat each one: [`specs/components.yaml`](specs/components.yaml).
+These are the named parts Specter uses. Each part has a **description** (what it is) and **instructions** (how to write it). Instructions are what [`specs/specfinition.md`](specs/specfinition.md) includes. Full wording and synonyms: [`specs/components.yaml`](specs/components.yaml).
 
-| Part | What it is |
-| --- | --- |
-| **front matter** | title, date, status, slug, parent |
-| **problem** | pain today, from the user's side |
-| **current system** | how it works now |
-| **solution** | what becomes true when the work is done |
-| **user stories** | actor, capability, benefit |
-| **success** | checkable facts that the work is done |
-| **out of scope** | named no's for this spec |
-| **later work** | wanted, not this spec; do not build; let it shape the design |
-| **edit whitelist** | domain surfaces this spec may change |
-| **edit blacklist** | domain surfaces this spec must not change |
-| **invariants** | true before, during, and after |
-| **design decisions** | contested calls, and why not the other thing |
-| **open questions** | left unset on purpose |
-| **call contract** | named verbs a caller runs (CLI, routes, flags) |
-| **data models** | durable shapes and meaning |
-| **architecture** | modules, interfaces, seams, edges |
-| **domain language** | product words already in use; do not invent stand-ins |
-| **automation metric** | one number the agent may move |
-| **automation budget** | cap that ends a trial |
-| **risks** | what might go wrong in this change |
-| **work units** | named behaviors this spec must deliver (stable ids) |
+| Part | What it is | Instructions |
+| --- | --- | --- |
+| **front matter** | title, date, status, slug, parent | fill those fields; parent only when iterating |
+| **problem** | pain today, from the user's side | always include; who cannot do what |
+| **current system** | how it works now | if blank, not used (greenfield) |
+| **solution** | what becomes true when the work is done | always include; outcome, not modules |
+| **user stories** | actor, capability, benefit | tag with a work-unit id when this spec delivers it |
+| **success** | checkable facts that the work is done | always include; checkable on a real surface |
+| **out of scope** | named no's for this spec | named no's; not later work |
+| **later work** | wanted, not this spec; do not build; let it shape the design | do not build; let it shape design |
+| **edit whitelist** | domain surfaces this spec may change | if blank, not used |
+| **edit blacklist** | domain surfaces this spec must not change | if blank, not used |
+| **invariants** | true before, during, and after | keep short; NEVER/MUST only here |
+| **design decisions** | contested calls, and why not the other thing | contested calls only |
+| **open questions** | left unset on purpose | if it must ship, it is not open |
+| **call contract** | named verbs a caller runs (CLI, routes, flags) | named verbs a caller runs |
+| **data models** | durable shapes and meaning | shapes of the data, not files |
+| **architecture** | modules, interfaces, seams, edges | modules and seams, not a file tree |
+| **domain language** | product words already in use; do not invent stand-ins | infer existing terms; agree before status agreed |
+| **automation metric** | one number the agent may move | auto-research loops; if blank, not used |
+| **automation budget** | cap that ends a trial | auto-research loops; if blank, not used; with metric or neither |
+| **risks** | what might go wrong in this change | what might go wrong in this change |
+| **work units** | named behaviors this spec must deliver (stable ids) | always include; stable ids, never renumber |
 
 ## If you just want the spec shape
 
@@ -51,7 +51,7 @@ people/
     person.yaml           GitHub, X, projects, and how they work now
     example.md            one real spec or plan (not a bio)
 specs/
-  components.yaml         the spec parts above
+  components.yaml         spec parts: description + instructions
   specfinition.md         ratacat's spec definition
 ```
 
