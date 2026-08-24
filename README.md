@@ -2,7 +2,7 @@
 
 Specter tracks how AI builders write specs and plans, and how they ship with coding agents.
 
-Specter gathers the spec and plan parts those builders actually use: Problem, Success, design decisions, work units, later work, call contract, and the rest listed below. It also keeps ready-made spec and plan schemas you can drop into agent-led software work. This is not a product.
+Specter gathers the spec and plan parts those builders actually use: problem, success, design decisions, work units, later work, call contract, and the rest listed below. It also keeps ready-made spec and plan schemas you can drop into agent-led software work. This is not a product.
 
 This repo stays current. It pulls from the GitHubs and X accounts of the builders below so the notes match what they think and ship now, not what they said a year ago.
 
@@ -13,12 +13,12 @@ These are the named parts Specter uses. Full wording, synonyms, and how an agent
 | Part | What it is |
 | --- | --- |
 | **front matter** | title, date, status, slug, parent |
-| **Problem** | pain today, from the user's side |
-| **Current system** | how it works now |
-| **Solution** | what becomes true when the work is done |
+| **problem** | pain today, from the user's side |
+| **current system** | how it works now |
+| **solution** | what becomes true when the work is done |
 | **user stories** | actor, capability, benefit |
-| **Success** | checkable facts that the work is done |
-| **Out of scope** | named no's for this spec |
+| **success** | checkable facts that the work is done |
+| **out of scope** | named no's for this spec |
 | **later work** | wanted, not this spec; do not build; let it shape the design |
 | **edit whitelist** | domain surfaces this spec may change |
 | **edit blacklist** | domain surfaces this spec must not change |
@@ -27,8 +27,8 @@ These are the named parts Specter uses. Full wording, synonyms, and how an agent
 | **open questions** | left unset on purpose |
 | **call contract** | named verbs a caller runs (CLI, routes, flags) |
 | **data models** | durable shapes and meaning |
-| **Architecture** | modules, interfaces, seams, edges |
-| **Domain language** | product words already in use; do not invent stand-ins |
+| **architecture** | modules, interfaces, seams, edges |
+| **domain language** | product words already in use; do not invent stand-ins |
 | **automation metric** | one number the agent may move |
 | **automation budget** | cap that ends a trial |
 | **risks** | what might go wrong in this change |

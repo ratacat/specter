@@ -15,15 +15,15 @@
     (draft | agreed | superseded), slug, parent. Status and
     parent live here, not as their own components.
 
-- term: Problem
+- term: problem
   synonyms:
     - Problem Statement
     - Why this matters
   description: >
     Pain today, from the user's side. Who cannot do what.
-    Not the as-is topology — that is Current system.
+    Not the as-is topology — that is current system.
 
-- term: Current system
+- term: current system
   synonyms:
     - Current state
     - Current State Analysis
@@ -32,12 +32,12 @@
     How it actually works now. Snapshot, not a wish. Omit on
     greenfield.
 
-- term: Solution
+- term: solution
   synonyms:
     - Recommended Approach
   description: >
     What becomes true for that user when this spec is done.
-    Same altitude as Problem. Not architecture.
+    Same altitude as problem. Not architecture.
 
 - term: user stories
   synonyms:
@@ -47,7 +47,7 @@
     Actor, observable capability, benefit. Tag with a work-unit
     id when this spec delivers it. Untagged is context, not work.
 
-- term: Success
+- term: success
   synonyms:
     - Success Criteria
     - Done criteria
@@ -59,7 +59,7 @@
     pass from fail on a real surface (screen, CLI, eval, the
     command that proves it). Inconclusive is fail.
 
-- term: Out of scope
+- term: out of scope
   synonyms:
     - What we're NOT doing
     - Non-goals
@@ -112,7 +112,7 @@
     - Rationale
   description: >
     Contested calls, and why not the obvious alternative.
-    Skip anything already obvious from Problem or Solution.
+    Skip anything already obvious from problem or solution.
 
 - term: open questions
   synonyms:
@@ -144,7 +144,7 @@
     Durable shapes and meaning. YAML or JSON of the data, not
     of source files. Not ORMs, not tables-as-files.
 
-- term: Architecture
+- term: architecture
   synonyms:
     - Architecture Overview
     - Architecture (modules)
@@ -152,7 +152,7 @@
     Modules, interfaces, seams, edges. Map of duties. Not a
     file tree.
 
-- term: Domain language
+- term: domain language
   synonyms:
     - Vocabulary
     - Glossary
